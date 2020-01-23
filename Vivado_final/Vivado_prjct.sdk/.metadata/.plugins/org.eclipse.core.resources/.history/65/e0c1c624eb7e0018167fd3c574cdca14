@@ -1,0 +1,20 @@
+#define XILINX_BOARD_NAME               "artyElk"
+
+/* Microblaze is microblaze_0 */
+#define XILINX_FSL_NUMBER       3
+
+/* GPIO is LEDs_4Bit*/
+#define XILINX_GPIO_BASEADDR            0x40030000
+
+#define XILINX_SPI_FLASH_BASEADDR       0x44a10000
+#define XILINX_SPI_FLASH_MAX_FREQ       30000000
+#define XILINX_SPI_FLASH_CS             0
+
+#define XILINX_LOCAL_BRAM_BYTE_SIZE     0x10000
+
+#define XILINX_USE_ICACHE
+#define XILINX_USE_DCACHE
+#define XILINX_DCACHE_BYTE_SIZE         0x4000
+
+#define XILINX_MEMORY_START             0x80000000
+#define  XILINX_MEMORY_SIZE             0x10000000

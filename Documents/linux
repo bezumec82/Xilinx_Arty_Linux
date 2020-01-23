@@ -1,0 +1,64 @@
+### Variables ###
+export ARTY_PATH=/home/constantine/ARTY_A7
+export U_BOOT_SRC_PATH=${ARTY_PATH}/Vivado_prjct/Vivado_prjct.sdk/u-boot-xlnx
+export PLNX_TOOLS_PATH=/home/constantine/PetaLinuxTools
+
+export CROSS_COMPILE=microblazeel-xilinx-linux-gnu-
+export ARCH=microblazeel
+
+PATH=${PLNX_TOOLS_PATH}/tools/linux-i386/microblazeel-xilinx-linux-gnu/bin:$PATH
+PATH=$U_BOOT_SRC_PATH/tools:$PATH
+
+export PATH_TO_LNX_IMG=${ARTY_PATH}/Linux/linux-xlnx/arch/microblaze/boot
+
+### Build ###
+cd ${ARTY_PATH}/Linux/linux-xlnx
+
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- clean
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- mmu_defconfig
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- menuconfig
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- \
+UIMAGE_LOADADDR=0x80000000 linux.bin -j8
+
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- simpleImage.arty -j8
+make ARCH=microblaze CROSS_COMPILE=microblazeel-xilinx-linux-gnu- \
+UIMAGE_LOADADDR=0x80000000 simpleImage.arty linux.bin -j8
+
+cd /home/constantine/ARTY_A7/Linux/linux-xlnx/arch/microblaze/boot
+rst
+dow -data linux.bin 0x80000000
+rwr pc 0x80000000
+con
+
+stat $PATH_TO_LNX_IMG/linux.bin
+mkimage \
+-A microblaze \
+-O linux \
+-T kernel \
+-C none \
+-a 0x80000000 \
+-e 0x80000000 \
+-d $PATH_TO_LNX_IMG/linux.bin \
+/tftpboot/arty/uImage
+
+### Convert RAM disk ###
+
+mkimage \
+-A microblaze \
+-T ramdisk \
+-C gzip \
+-d /tftpboot/arty/microblaze-le_minimal.cpio.gz \
+/tftpboot/arty/uramdisk.image.gz
+
+cd /home/constantine/ARTY_A7/Linux/linux-xlnx
+rst
+dow vmlinux
+con
+
+
+~~~~~~~~~~~~~~~~~~
+Create device tree
+~~~~~~~~~~~~~~~~~~
+${U_BOOT_SRC_PATH}/scripts/dtc/dtc -I dts -O dtb \
+-o ${ARTY_PATH}/Linux/DeviceTree/arty.dtb \
+${ARTY_PATH}/Linux/DeviceTree/arty.dts

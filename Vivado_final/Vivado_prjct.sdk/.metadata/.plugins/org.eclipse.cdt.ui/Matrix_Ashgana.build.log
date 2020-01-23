@@ -1,0 +1,21 @@
+09:43:17 **** Incremental Build of configuration Debug for project Matrix_Ashgana ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mxl-frequency -I../../Matrix_Ashgana_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v10.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: Matrix_Ashgana.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Matrix_Ashgana_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v10.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Matrix_Ashgana.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Matrix_Ashgana.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Matrix_Ashgana.elf  |tee "Matrix_Ashgana.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   7648	    416	   2080	  10144	   27a0	Matrix_Ashgana.elf
+Finished building: Matrix_Ashgana.elf.size
+ 
+
+09:43:17 Build Finished (took 109ms)
+

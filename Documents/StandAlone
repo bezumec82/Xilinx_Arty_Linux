@@ -1,0 +1,15 @@
+### LWIP ###
+cd /media/constantine/Work/ARTY_A7/Vivado_prjct_v2/Vivado_prjct.sdk/LWIP_test/Debug
+
+connect
+targets 
+target -set -filter {name =~ "MicroBlaze #0"}
+
+rst
+dow LWIP_test.elf
+con
+
+rst
+dow -data LWIP_test.elf 0x80000000
+rwr pc 0x80000000
+con

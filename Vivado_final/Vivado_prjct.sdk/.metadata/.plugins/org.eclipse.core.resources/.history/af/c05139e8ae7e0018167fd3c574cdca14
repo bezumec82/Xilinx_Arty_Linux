@@ -1,0 +1,23 @@
+/*
+ * (C) Copyright 2007 Michal Simek
+ *
+ * Michal  SIMEK <monstr@monstr.eu>
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ *
+ * CAUTION: This file is a faked configuration !!!
+ *          There is no real target for the microblaze-generic
+ *          configuration. You have to replace this file with
+ *          the generated file from your Xilinx design flow.
+ */
+
+#define XILINX_BOARD_NAME	microblaze-generic
+
+/* Microblaze is microblaze_0 */
+#define XILINX_FSL_NUMBER	3
+
+/* GPIO is LEDs_4Bit*/
+#define XILINX_GPIO_BASEADDR		0x40030000
+
+#define XILINX_DCACHE_BYTE_SIZE		0x4000
+#define XILINX_LOCAL_BRAM_BYTE_SIZE 0x4000

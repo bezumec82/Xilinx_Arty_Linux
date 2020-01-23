@@ -1,0 +1,2 @@
+cd /home/constantine/ARTY_A7/Board/arty_bsd_tutorial/BSD/proj
+source ./create_project.tcl

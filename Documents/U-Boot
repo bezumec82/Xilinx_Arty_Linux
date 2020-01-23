@@ -1,0 +1,82 @@
+### Variables ###
+export ARTY_PATH=/home/constantine/ARTY_A7
+export U_BOOT_SRC_PATH=${ARTY_PATH}/Linux/u-boot-xlnx
+export PLNX_TOOLS_PATH=/home/constantine/PetaLinuxTools
+
+export CROSS_COMPILE=microblazeel-xilinx-linux-gnu-
+export ARCH=microblazeel
+
+PATH=${PLNX_TOOLS_PATH}/tools/linux-i386/microblazeel-xilinx-linux-gnu/bin:$PATH
+PATH=$U_BOOT_SRC_PATH/tools:$PATH
+
+### Source ###
+git clone https://github.com/Xilinx/u-boot-xlnx.git
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Compile u-boot /manually/
+~~~~~~~~~~~~~~~~~~~~~~~~~
+cd $U_BOOT_SRC_PATH
+
+make CROSS_COMPILE=microblazeel-xilinx-linux-gnu- ARCH=microblaze distclean
+make CROSS_COMPILE=microblazeel-xilinx-linux-gnu- ARCH=microblaze microblaze-generic_defconfig
+make CROSS_COMPILE=microblazeel-xilinx-linux-gnu- ARCH=microblaze all
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+Setup Eclipse for u-boot
+~~~~~~~~~~~~~~~~~~~~~~~~
+PATH=
+/media/constantine/Work/PetaLinux_tools/tools/linux-i386/microblazeel-xilinx-linux-gnu/bin:/usr/bin:/bin
+
+ARCH=
+microblaze
+CROSS_COMPILE=
+microblazeel-xilinx-linux-gnu-
+
+cd /home/constantine/ARTY_A7/Linux/u-boot-xlnx/
+cd /home/constantine/ARTY_A7/Linux/u-boot-xlnx-test/u-boot-xlnx
+cd /media/constantine/Work/ARTY_A7/Vivado_prjct_v2/Vivado_prjct.sdk/u-boot-xlnx
+cd /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/u-boot-xlnx
+
+connect
+targets 
+target -set -filter {name =~ "MicroBlaze #0"}
+
+rst
+dow u-boot
+con
+
+rst
+dow -data u-boot.bin 0x80000000
+rwr pc 0x80000000
+con
+
+rst
+dow -data ./spl/u-boot-spl.bin 0x0
+rwr pc 0x0
+con
+
+cd /home/constantine/ARTY/Win_workspace/Spi_srec_loader/Debug
+cd /home/constantine/ARTY/Win/ISE_project_hw_platform
+cd /home/constantine/ARTY
+
+data2mem \
+-p xc6slx45csg324-3 \
+-bt "./Win/ISE_project_hw_platform/system.bit" \
+-bd "./Win_workspace/Spi_srec_loader/Debug/Spi_srec_loader.elf" \
+tag microblaze_0  \
+-o b implementation/download.bit
+
++++++++++++++++
+TROUBLESHOUTING
++++++++++++++++
+U-boot
+Permanent reboot:
+No serial driver found
+resetting ...
+
+Rebuild device tree - wrong:
+	stdout-path = "serial???:115200n8";
+
+
+wget --user 9g45oem --password jdalJdrTT -r -np -R "index.html*" ftp://ftp.starterkit.ru/
+wget --user at91sam9g45xc6slx --password 6thds5Nb -r -np -R "index.html*" ftp://ftp.starterkit.ru/

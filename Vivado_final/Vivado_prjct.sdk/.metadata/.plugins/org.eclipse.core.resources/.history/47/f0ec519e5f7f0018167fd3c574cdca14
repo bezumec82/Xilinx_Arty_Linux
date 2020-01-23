@@ -1,0 +1,117 @@
+/*
+ * (C) Copyright 2007 Michal Simek
+ * (C) Copyright 2004 Atmark Techno, Inc.
+ *
+ * Michal  SIMEK <monstr@monstr.eu>
+ * Yasushi SHOJI <yashi@atmark-techno.com>
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ */
+
+#include <common.h>
+#include <command.h>
+#include <fdt_support.h>
+#include <image.h>
+#include <u-boot/zlib.h>
+#include <asm/byteorder.h>
+
+DECLARE_GLOBAL_DATA_PTR;
+
+int arch_fixup_fdt(void *blob)
+{
+    return 0;
+}
+
+int do_bootm_linux(
+        int flag,
+        int argc,
+        char * const argv[],
+        bootm_headers_t *images) {
+    printf("## 'bootm' started.\n");
+
+    /* First parameter is mapped to $r5 for kernel boot args */
+    void (*thekernel)(char *, ulong, ulong);
+    char * commandline = env_get("bootargs");
+    ulong rd_data_start, rd_data_end;
+
+    /*
+     * allow the PREP bootm subcommand, it is required for bootm to work
+     */
+#if (1)
+    if (flag & BOOTM_STATE_OS_PREP) {
+        printf("%s : PREP bootm subcommand.\n", __func__);
+        return 0;
+    }
+    if ((flag != 0) && (flag != BOOTM_STATE_OS_GO)) {
+        printf("OS not ready.\n");
+        return 1;
+    }
+#endif
+
+    int ret;
+
+    char *of_flat_tree = NULL;
+#if defined(CONFIG_OF_LIBFDT)
+    /* did generic code already find a device tree? */
+    if (images->ft_len)
+        of_flat_tree = images->ft_addr;
+#endif
+
+    thekernel = (void (*)(char *, ulong, ulong)) images->ep;
+
+#if (1)
+    /* find ramdisk */
+    ret = boot_get_ramdisk(
+            argc,
+            argv,
+            images,
+            IH_ARCH_MICROBLAZE,
+            &rd_data_start, &rd_data_end);
+    if (ret) {
+        printf("%s : Can't get ramdisk.\n", __func__);
+        return 1;
+    }
+#endif
+
+    bootstage_mark(BOOTSTAGE_ID_RUN_OS);
+
+    if (!of_flat_tree && argc > 1)
+        of_flat_tree = (char *) simple_strtoul(argv[1], NULL, 16);
+#if (0)
+    /* fixup the initrd now that we know where it should be */
+    if (images->rd_start && images->rd_end && of_flat_tree) {
+        ret = fdt_initrd(
+                of_flat_tree,
+                images->rd_start,
+                images->rd_end
+        );
+        if (ret) {
+            printf("%s : Can't get fdt.\n", __func__);
+            return 1;
+        }
+    }
+#endif
+
+#ifdef XILINX_USE_DCACHE
+    printf("%s : Flushing cache.\n", __func__);
+    flush_cache(0, XILINX_DCACHE_BYTE_SIZE);
+#endif
+    /*
+     * Linux Kernel Parameters (passing device tree):
+     * r5: pointer to command line
+     * r6: pointer to ramdisk
+     * r7: pointer to the fdt, followed by the board info data
+     */
+    printf(YEL""
+    "Transferring control to Linux.\n"
+    MAG
+    "Kernel address   : 0x%08lx\n"
+    "RAM disk address : 0x%08lx\n"
+    "FDT address      : 0x%08lx\n"NORM,
+            (ulong) thekernel,
+            rd_data_start, (ulong) of_flat_tree);
+    thekernel(commandline, rd_data_start, (ulong) of_flat_tree);
+    /* does not return */
+    printf(RED"%s : ERROR LOADING KERNEL.\n"NORM, __func__);
+    return 1;
+}

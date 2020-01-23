@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_microblaze_0_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_microblaze_0_axi_intc_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_dlmb_v10_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_v10_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_clock_converter_0_1_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_clock_converter_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_cc_periph_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_cc_periph_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ddr_int_rst_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_ddr_int_rst_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_cc_periph1_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_cc_periph1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_xbar_1_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_ethernetlite_0_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_ethernetlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_uartlite_0_2_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_uartlite_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_axi_uartlite_0_3_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_axi_uartlite_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_main_rst_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_main_rst_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_clk_wiz_1_1_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_clk_wiz_1_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_m00_data_fifo_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_m00_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_us_df_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_auto_us_df_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_cc_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_s00_data_fifo_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_s00_data_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_auto_us_df_1_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_auto_us_df_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_microblaze_0_0_synth_1"/>
+		<Parent Id="system_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="system_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_dlmb_v10_0_synth_1"/>
+		<Parent Id="system_ilmb_v10_0_synth_1"/>
+		<Parent Id="system_xbar_0_synth_1"/>
+		<Parent Id="system_axi_clock_converter_0_1_synth_1"/>
+		<Parent Id="system_axi_cc_periph_0_synth_1"/>
+		<Parent Id="system_ddr_int_rst_0_synth_1"/>
+		<Parent Id="system_axi_cc_periph1_0_synth_1"/>
+		<Parent Id="system_xbar_1_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_axi_ethernetlite_0_0_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_2_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_3_synth_1"/>
+		<Parent Id="system_main_rst_0_synth_1"/>
+		<Parent Id="system_clk_wiz_1_1_synth_1"/>
+		<Parent Id="system_m00_data_fifo_0_synth_1"/>
+		<Parent Id="system_auto_us_df_0_synth_1"/>
+		<Parent Id="system_auto_cc_0_synth_1"/>
+		<Parent Id="system_s00_data_fifo_0_synth_1"/>
+		<Parent Id="system_auto_us_df_1_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_microblaze_0_0_synth_1"/>
+		<Parent Id="system_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="system_rst_clk_wiz_1_100M_0_synth_1"/>
+		<Parent Id="system_dlmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_dlmb_v10_0_synth_1"/>
+		<Parent Id="system_ilmb_v10_0_synth_1"/>
+		<Parent Id="system_xbar_0_synth_1"/>
+		<Parent Id="system_axi_clock_converter_0_1_synth_1"/>
+		<Parent Id="system_axi_cc_periph_0_synth_1"/>
+		<Parent Id="system_ddr_int_rst_0_synth_1"/>
+		<Parent Id="system_axi_cc_periph1_0_synth_1"/>
+		<Parent Id="system_xbar_1_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+		<Parent Id="system_axi_ethernetlite_0_0_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_2_synth_1"/>
+		<Parent Id="system_axi_uartlite_0_3_synth_1"/>
+		<Parent Id="system_main_rst_0_synth_1"/>
+		<Parent Id="system_clk_wiz_1_1_synth_1"/>
+		<Parent Id="system_m00_data_fifo_0_synth_1"/>
+		<Parent Id="system_auto_us_df_0_synth_1"/>
+		<Parent Id="system_auto_cc_0_synth_1"/>
+		<Parent Id="system_s00_data_fifo_0_synth_1"/>
+		<Parent Id="system_auto_us_df_1_synth_1"/>
+	</Run>
+</Runs>
+

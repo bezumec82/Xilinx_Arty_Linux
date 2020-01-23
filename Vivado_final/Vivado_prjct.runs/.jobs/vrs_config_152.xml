@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_microblaze_0_axi_intc_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_microblaze_0_axi_intc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="system_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/system_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="system_microblaze_0_axi_intc_0_synth_1"/>
+		<Parent Id="system_ilmb_bram_if_cntlr_0_synth_1"/>
+	</Run>
+</Runs>
+

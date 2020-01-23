@@ -1,0 +1,540 @@
+!SESSION 2018-09-16 23:22:18.831 -----------------------------------------------
+eclipse.buildId=2017.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/.metadata/.bak_0.log
+Created Time: 2018-09-17 00:03:21.645
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:21.645
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:21.670
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:21.670
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:21.772
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:21.772
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.775
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.776
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.797
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.798
+!MESSAGE XSCT Command: [dow /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/Matrix_Ashgana/Debug/Matrix_Ashgana.elf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.887
+!MESSAGE XSCT command with result: [dow /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/Matrix_Ashgana/Debug/Matrix_Ashgana.elf], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.936
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.975
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty 210319A434C0A"} -index 0], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.975
+!MESSAGE XSCT Command: [con], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:24.979
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:37.160
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-604
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:37.162
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-604
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:50.951
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:50.953
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.503
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.550
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.550
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.608
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.608
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.612
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.612
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.625
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.625
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.640
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:03:59.641
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:04:03.681
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:04:04.484
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:04:04.485
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:22.926
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:22.927
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.483
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.484
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.484
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.488
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.488
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.492
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.492
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.504
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.504
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.520
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:31.520
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:33.682
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:34.483
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:34.484
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:45.013
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:45.014
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.605
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.606
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.606
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.612
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.613
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.617
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.617
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.629
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.629
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.645
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:53.646
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:56.318
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:57.123
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:08:57.125
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:34.196
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:34.198
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.777
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.778
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.778
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.783
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.783
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.786
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.787
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.798
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.799
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.814
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:42.814
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:45.196
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:45.996
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:20:45.998
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:24.286
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:24.288
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.830
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.831
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.831
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.836
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.837
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.841
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.841
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.852
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.852
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.868
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:32.868
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:35.536
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:36.337
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:30:36.338
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:32:57.788
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:32:57.790
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.329
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.330
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.330
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.334
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.334
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.338
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.338
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.349
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.349
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.365
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:06.365
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:09.063
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:09.863
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:33:09.864
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:37.913
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:37.915
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.558
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.559
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.559
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.563
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.563
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.567
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.567
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.579
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.579
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.595
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:46.596
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:48.912
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:49.713
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:36:49.714
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:22.001
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:22.002
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.546
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.547
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.547
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.552
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.552
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.556
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.556
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.567
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.568
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.583
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:30.583
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:32.561
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:33.364
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:38:33.367
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:23.758
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:23.760
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.414
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.415
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.416
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.420
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.420
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.424
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.424
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.435
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.435
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.451
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:32.451
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:35.281
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:36.082
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 00:39:36.083
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:25.676
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:25.678
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.217
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.218
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.218
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.222
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.222
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.226
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Arty 210319A434C0A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.226
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.237
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==1}], Result: [null,      2  xc7a35t (idcode 0362d093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.237
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.254
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Arty 210319A434C0A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:34.254
+!MESSAGE XSCT Command: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:35.968
+!MESSAGE XSCT command with result: [fpga -file /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:36.768
+!MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2018-09-17 09:43:36.770
+!MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks /media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk/system_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 1 0 2018-09-17 10:42:03.866
+!MESSAGE Executed Webtalk command

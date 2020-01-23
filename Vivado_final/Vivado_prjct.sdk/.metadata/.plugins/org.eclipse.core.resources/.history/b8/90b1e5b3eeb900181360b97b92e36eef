@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+#define MIN(X,Y)    (X<Y)?X:Y
+
+
+
+int main()
+{
+    init_platform();
+
+    print("Hello World\n\r");
+
+    cleanup_platform();
+    return 0;
+}

@@ -1,0 +1,205 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_mig_7series_0_83M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rst_mig_7series_0_83M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_mig_7series_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_mig_7series_0_0 (xilinx.com:ip:mig_7series:4.0 (Rev. 4)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_clk_wiz_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_clk_wiz_1_0 (xilinx.com:ip:clk_wiz:5.4 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_uartlite_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_uartlite_1_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_uartlite_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_uartlite_0_1 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_quad_spi_flash_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_quad_spi_flash_0 (xilinx.com:ip:axi_quad_spi:3.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_gpio_sw_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_gpio_sw_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 15)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_gpio_led_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_gpio_led_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 15)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (lin64) Build 1909853 Thu Jun 15 18:39:10 MDT 2017
+| Date         : Wed Jun 20 18:00:19 2018
+| Host         : constantine-System-Product-Name running 64-bit Ubuntu 14.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7a35ticsg324-1L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_axi_ethernetlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of system_axi_ethernetlite_0_0 (xilinx.com:ip:axi_ethernetlite:3.0 (Rev. 11)) to Vivado generation flows.
+

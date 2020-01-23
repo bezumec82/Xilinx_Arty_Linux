@@ -1,0 +1,16 @@
+00:09:29 **** Clean-only build of project test_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/bram_v4_1/src -s clean 
+make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
+make -C microblaze_0/libsrc/emaclite_v4_3/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/intc_v3_6/src -s clean 
+make -C microblaze_0/libsrc/spi_v4_2/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_3/src -s clean 
+make -C microblaze_0/libsrc/sysmon_v7_3/src -s clean 
+make -C microblaze_0/libsrc/tmrctr_v4_3/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+rm -f microblaze_0/lib/libxil.a
+
+00:09:29 Build Finished (took 112ms)
+

@@ -1,0 +1,47 @@
+--- ./system_17.1.tcl	2018-06-20 12:16:03.000000000 +0300
++++ ./system_digilent.tcl	2016-01-22 14:19:08.000000000 +0300
+@@ -10,7 +10,7 @@
+ ################################################################
+ # Check if script is running in correct Vivado version.
+ ################################################################
+-set scripts_vivado_version 2017.2
++set scripts_vivado_version 2015.3
+ set current_vivado_version [version -short]
+ 
+ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+@@ -524,7 +524,7 @@
+  ] $axi_uartlite_0
+ 
+   # Create instance: clk_wiz_1, and set properties
+-  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.4 clk_wiz_1 ]
++  set clk_wiz_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:5.2 clk_wiz_1 ]
+   set_property -dict [ list \
+ CONFIG.CLKOUT2_JITTER {118.758} \
+ CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+@@ -556,7 +556,7 @@
+   set mdm_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mdm:3.2 mdm_1 ]
+ 
+   # Create instance: microblaze_0, and set properties
+-  set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:10.0 microblaze_0 ]
++  set microblaze_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:9.5 microblaze_0 ]
+   set_property -dict [ list \
+ CONFIG.C_CACHE_BYTE_SIZE {16384} \
+ CONFIG.C_DCACHE_BYTE_SIZE {16384} \
+@@ -590,7 +590,7 @@
+  ] $microblaze_0_xlconcat
+ 
+   # Create instance: mig_7series_0, and set properties
+-  set mig_7series_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.0 mig_7series_0 ]
++  set mig_7series_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:2.4 mig_7series_0 ]
+ 
+   # Generate the PRJ File for MIG
+   set str_mig_folder [get_property IP_DIR [ get_ips [ get_property CONFIG.Component_Name $mig_7series_0 ] ] ]
+@@ -617,7 +617,7 @@
+   set rst_mig_7series_0_83M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_mig_7series_0_83M ]
+ 
+   # Create instance: xadc_wiz_0, and set properties
+-  set xadc_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.3 xadc_wiz_0 ]
++  set xadc_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xadc_wiz:3.2 xadc_wiz_0 ]
+   set_property -dict [ list \
+ CONFIG.CHANNEL_ENABLE_TEMPERATURE {true} \
+ CONFIG.CHANNEL_ENABLE_VAUXP0_VAUXN0 {true} \

@@ -1,0 +1,13 @@
+12:34:21 **** Auto Build of configuration Debug for project Echo ****
+make all 
+Building file: ../src/echo.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mxl-frequency -mxl-frequency -I../../Echo_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v10.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+../src/echo.c:36:22: fatal error: lwip/err.h: No such file or directory
+ #include "lwip/err.h"
+                      ^
+compilation terminated.
+make: *** [src/echo.o] Error 1
+
+12:34:21 Build Finished (took 64ms)
+

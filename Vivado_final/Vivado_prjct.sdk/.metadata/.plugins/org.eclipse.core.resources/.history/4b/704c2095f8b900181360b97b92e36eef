@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "main.h"
+
+#define VERBOSE_MODE    0
+
+#define MIN(X,Y)        (X<Y)?X:Y
+#define MATRIX_SIZE     5
+
+int main() {
+    init_platform();
+
+    int array[MATRIX_SIZE][MATRIX_SIZE] = {
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+    };
+
+    int indx1 = 0;
+    int indx2 = 0;
+    int val1 = 0;
+    int val2 = 0;
+
+    for (indx1 = 0;
+            indx1 < MATRIX_SIZE;
+            indx1++
+            ) {
+#if (VERBOSE_MODE)
+        xil_printf(MAG"External 'for' loop. Entering cycle %i.\r\n"NORM, indx1);
+#else
+
+#endif
+        for (indx2 = 0;
+                indx2 < MATRIX_SIZE;
+                indx2++
+                ) {
+#if (VERBOSE_MODE)
+            xil_printf(CYN"Internal 'for' loop. Entering cycle %i.\r\n"NORM, indx2);
+#else
+            xil_printf(YEL"{ ");
+#endif
+            if ((indx1 + indx2) % 2 != 0) {
+                array[indx1][indx2] = --val1;
+
+#if (VERBOSE_MODE)
+                xil_printf(GRN"Filling odd array member : "
+                        "array [%i] [%i] = %i\r\n"NORM,
+                        indx1, indx2, val1);
+#else
+                xil_printf(GRN"%i ,", array[indx1][indx2]);
+#endif
+            } else {
+                array[indx1][indx2] = ++val2;
+
+#if (VERBOSE_MODE)
+                xil_printf(YEL"Filling even array member : "
+                        "array [%i] [%i] = %i\r\n"NORM,
+                        indx1, indx2, val2);
+#else
+                xil_printf(YEL"%i ,", array[indx1][indx2]);
+#endif
+
+            } //end if ((indx1 + indx2) % 2 != 0)
+#if (VERBOSE_MODE)
+            xil_printf(CYN"Internal 'for' loop. Exiting cycle %i.\r\n"NORM, indx2);
+#else
+            xil_printf(YEL" }");
+#endif
+        } //end for (indx2 = 0;
+
+#if (VERBOSE_MODE)
+        xil_printf(MAG"External 'for' loop. Exiting cycle %i.\r\n"NORM, indx1);
+#else
+        xil_printf(YEL"\r\n");
+#endif
+    } //end for (indx1 = 0;
+
+    cleanup_platform();
+    return 0;
+}

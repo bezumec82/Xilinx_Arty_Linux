@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/media/constantine/Work/ARTY_A7/Vivado_prjct_final/Vivado_prjct.sdk"/>
+			<item value="/home/constantine/ARTY_A7/Board/u-boot-xlnx"/>
+			<item value="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.sdk"/>
+			<item value="/home/constantine/ARTY_A7/Linux/u-boot-xlnx"/>
+			<item value="/home/constantine/ARTY_A7/Vivado_prjct/Vivado_prjct.sdk/system_wrapper_hw_platform_0"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+</section>

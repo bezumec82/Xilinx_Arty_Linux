@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "main.h"
+
+#define MIN(X,Y)        (X<Y)?X:Y
+#define MATRIX_SIZE     5
+
+int main() {
+    init_platform();
+
+    int array[MATRIX_SIZE][MATRIX_SIZE] = {
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+            { 0, 0, 0, 0, 0 },
+    };
+
+    int indx1 = 0;
+    int indx2 = 0;
+    int val1 = 0;
+    int val2 = 0;
+
+    for (indx1 = 0;
+            indx1 < MATRIX_SIZE;
+            indx1++
+            ) {
+
+        xil_printf(MAG"External 'for' loop. Entering cycle %i.\r\n"NORM, indx1);
+
+        for (indx2 = 0;
+                indx2 < MATRIX_SIZE;
+                indx2++
+                ) {
+
+            xil_printf(MAG"Internal 'for' loop. Entering cycle %i.\r\n"NORM, indx2);
+
+            if ((indx1 + indx2) % 2 != 0) {
+
+                xil_printf(CYN"Filling odd array member : "
+                "array [%i] [%i] = %i\r\n"NORM,
+                        indx1, indx2, val1);
+
+                array[indx1][indx2] = --val1;
+            } else {
+
+                xil_printf(CYN"Filling even array member : "
+                "array [%i] [%i] = %i\r\n"NORM,
+                        indx1, indx2, val1);
+
+                array[indx1][indx2] = ++val2;
+            }
+
+            xil_printf(MAG"Internal 'for' loop. Exiting cycle %i.\r\n"NORM, indx2);
+
+        } //end for (indx2 = 0;
+
+        xil_printf(MAG"External 'for' loop. Exiting cycle %i.\r\n"NORM, indx1);
+
+    } //end for (indx1 = 0;
+
+    cleanup_platform();
+    return 0;
+}
